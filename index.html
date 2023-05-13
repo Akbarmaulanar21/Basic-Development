@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Student Portal</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <h1>Student Portal</h1>
+        </div>
+        <div class="nav-right">
+            <p>Admin</p>
+            <img src="assets/user.png" alt="user.png">
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <form id="form-student">
+            <label for="input-name">Fullname</label>
+            <input type="text" id="input-name" name="fullname" required /><br />
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="input-date">Birth Date</label>
+                    <input type="date" id="input-date" name="birthdate" required /><br />
+                </div>
+                <div class="grid-item">
+                    <label for="input-gender">Gender</label>
+                    <select id="input-gender" name="gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select><br />
+                </div>
+            </div>
+            <label for="input-prody">Program Studi</label>
+            <select id="input-prody" name="programstudy" required>
+                <option value="Ekonomi">Ekonomi</option>
+                <option value="Manajemen">Manajemen</option>
+                <option value="Akuntansi">Akuntansi</option>
+                <option value="Administrasi Publik">Administrasi Publik</option>
+                <option value="Administrasi Bisnis">Administrasi Bisnis</option>
+                <option value="Hubungan Internasional">Hubungan Internasional</option>
+                <option value="Teknik Sipil">Teknik Sipil</option>
+                <option value="Arsitektur">Arsitektur</option>
+                <option value="Matematika">Matematika</option>
+                <option value="Fisika">Fisika</option>
+                <option value="Informatika">Informatika</option>
+            </select><br />
+
+            <input type="submit" value="Add student" id="add-btn" />
+        </form>
+    </div>
+    <hr>
+    <div class="table-container">
+        <table id="table-student">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Full Name</th>
+                    <th>Birth Date</th>
+                    <th>Gender</th>
+                    <th>Student ID</th>
+                    <th>Faculty</th>
+                    <th>Program Study</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <tbody id="student-data">
+                <tr>
+                    <td>1</td>
+                    <td>Ilmi Dhamayanti</td>
+                    <td>26/106/2002</td>
+                    <td>Female</td>
+                    <td>2003915131</td>
+                    <td>Fakultas Ilmu Sosial dan Politik</td>
+                    <td>Administrasi Bisnis</td>
+                    <td><button class="delete-btn" type="button">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Akbar Maulana R</td>
+                    <td>21/05/2002</td>
+                    <td>Male</td>
+                    <td>2003015182</td>
+                    <td>Fakultas Teknik</td>
+                    <td>Informatika</td>
+                    <td><button class="delete-btn" type="button">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e4e4e4;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  height: 70px;
+  padding: 0 25px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+nav p {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+nav img {
+  height: 40px;
+}
+
+.form-container {
+  display: flex;
+  margin: 45px;
+  width: auto;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Grid Styling */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 25px;
+}
+.grid-item {
+  text-align: left;
+}
+
+.form-container input[type="submit"] {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  width: auto;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.table-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table-container th {
+  color: black;
+}
+
+.table-container td button {
+  color: red;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
